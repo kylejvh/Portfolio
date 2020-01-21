@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script async src="https://kit.fontawesome.com/6368e05507.js"></script>
+    <script async src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>KJVH</title>
+  </head>
+<!-- 
+
+
+
+
+!! TO DO LIST FOR THIS:
+
+REFERENCE YOUR OLD CHROME TABS AND FIND THE DISCORD DEVELOPER'S PORTFOLIO EXAMPLE. SET IT UP LIKE THAT.
+
+THEN, REFERENCE YOUR UI/UX NOTES AND APPLY THE RULES OF GOOD DESIGN TO THIS.
+
+1. ADD MORE WHITESPACE, SPACE THINGS OUT MORE
+
+2. ADJUST TEXT SIZING FOR CLARITY.
+
+3. MAKE THE TOP CARD THE FIRST, AND MAKE IT FULL WIDTH. MAKE IT TAKE UP A GOOD AMOUNT OF VERTICAL SPACE SO THAT THERE IS CLEAR SEPARATION BETWEEN IT AND THE PROJECTS BELOW. MAKE SURE THE MARGIN SCALES CORRECTLY WITH MOBILE.
+
+4. MAKE THE PAGE FULLY RESPONSIVE, AND TWEAK THE LAYOUT TO DISPLAY CORRECTLY FOR MOBILE. 
+
+5. IMPLEMENT LIGHT MODE?
+
+
+
+
+
+!! MAKE SURE EVERYTHING WORKS... MAKE RESUME DOWNLOAD LINKS WORK!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+
+  <body class="bg-dark">
+    <nav class="navbar navbar-dark navbar-expand-sm">
+      <button
+        class="navbar-toggler btn btn-info"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerTarget"
+        aria-controls="navbarTogglerTarget"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarTogglerTarget"
+      >
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-light" href="#projects">Projects</a>
+          <a class="nav-item nav-link text-light" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="navbarIcons">
+        <div class="navbar-nav d-flex justify-content-end">
+          <a
+            class="nav-link fab fa-github-square text-light"
+            href="https://github.com/kylejvh"
+            target="_blank"
+          ></a>
+          <!-- <a class="nav-link fab fa-linkedin text-light"></a> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class=".container-fluid d-flex justify-content-center m-4">
+      <div class="d-flex flex-column align-items-center m-3">
+        <i
+          class="fas fa-book-reader fa-4x mb-1"
+          style="color: rgb(155, 49, 255)"
+        ></i>
+        <h1 class="text-light">Learn.</h1>
+      </div>
+      <div class="d-flex flex-column align-items-center m-3">
+        <i class="fab fa-react fa-4x mb-1" style="color: #61dafb"></i>
+        <h1 class="text-light">Think.</h1>
+      </div>
+      <div class="d-flex flex-column align-items-center m-3">
+        <i class="fas fa-seedling fa-4x mb-1" style="color: #28a745"></i>
+        <h1 class="text-light">Grow.</h1>
+      </div>
+    </div>
+
+    <div class="jumbotron m-auto p-5 w-50">
+      <h1 class="display-4 mb-2">Kyle Van Hoy</h1>
+      <p class="lead">
+        Self-taught <strong> Problem Solver </strong> dedicated to continuous growth.
+      </p>
+      <div>
+        <div class="d-inline-flex flex-column align-content-end">
+          <img class="stack-icon" src="./svgs/react.svg" alt="react"></img>
+          <p style="text-align: center">
+            React
+          </p>
+        </div>
+        <div class="d-inline-flex flex-column">
+            <img class="stack-icon" src="./svgs/js.svg"></img>
+          <p>
+            JavaScript
+          </p>
+        </div>
+        <div class="d-inline-flex flex-column">
+          <img class="stack-icon" src="./svgs/redux.svg"></img>
+        <p style="text-align: center">
+          Redux
+        </p>
+      </div>
+        <div class="d-inline-flex flex-column">
+            <img class="stack-icon" src="./svgs/bootstrap.svg"></img>
+          <p>
+            Bootstrap
+          </p>
+        </div>
+        <div class="d-inline-flex flex-column">
+            <img class="stack-icon" src="./svgs/git.svg"></img>
+          <p style="text-align: center">
+            Git
+          </p>
+        </div>
+        <div class="d-inline-flex flex-column">
+            <img class="stack-icon" src="./svgs/nodejs.svg"></img>
+          <p style="text-align: center">
+            Node.js
+          </p>
+        </div>
+       
+      </div>
+      <hr class="my-4" />
+      <div class="dropdown">
+        <a
+          class="btn btn-info dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Download Resume</a
+        >
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Download PDF</a>
+          <a class="dropdown-item" href="#">Download Word Document</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex" id="projects">
+      <div class="card m-4 w-50" style="width: 18rem;">
+        <img
+          src="./img/moviepreview.jpg"
+          class="card-img-top"
+          alt="MovieCards Preview"
+        />
+
+
+        <div class="card-body">
+          <h5 class="card-title">React MovieCards</h5>
+          <span class="badge badge-primary">React</span>
+          <span class="badge badge-primary">Hooks</span>
+          <span class="badge badge-primary">React Router</span>
+          <span class="badge badge-primary">Styled Components</span>
+          <p class="card-text">
+            React app that accesses API to display movie data.
+          </p>
+
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="View or demo React Movie cards project"
+          >
+            <a
+              href="https://kylejvh.github.io/React-MovieCards/"
+              type="button"
+              class="btn btn-info"
+            >
+              Demo
+            </a>
+            <a
+              href="https://github.com/kylejvh/React-MovieCards#react-moviecards"
+              class="btn btn-info"
+              >Github</a
+            >
+            <button type="button" class="btn btn-info">Code</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card m-4 w-50" style="width: 18rem;">
+        <img
+          src="./img/chatpreview.jpg"
+          class="card-img-top"
+          alt="Chat App Preview"
+        />
+        <div class="card-body">
+          <h5 class="card-title">MaterialChat</h5>
+          <span class="badge badge-primary">React w/ Hooks</span>
+          <span class="badge badge-primary"></span>
+          <span class="badge badge-primary">socket.io+Node.js</span>
+          <span class="badge badge-primary">Material-UI</span>
+          <p class="card-text">
+            Real-time fully featured chat application.
+          </p>
+
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="View or demo Utah travel project"
+          >
+            <a
+              href="https://kjvh-materialchat.herokuapp.com/"
+              type="button"
+              class="btn btn-info"
+            >
+              Demo
+            </a>
+            <a
+              href="https://github.com/kylejvh/ReactChatApp#react-chat-app"
+              class="btn btn-info"
+              >Github</a
+            >
+            <button type="button" class="btn btn-info">Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="card m-4 w-50" style="width: 18rem;">
+        <img
+        src="./img/utahpreview.jpg"
+        class="card-img-top"
+        alt="Chat App Preview"
+      />
+        <div class="card-body">
+          <h5 class="card-title">Utah Travel </h5>
+          <span class="badge badge-primary">HTML</span>
+          <span class="badge badge-primary">CSS</span>
+          <span class="badge badge-primary">JS</span>
+          <span class="badge badge-primary">lightgallery</span>
+         
+          <p class="card-text">
+            A showcase website built around my trip to Utah in 2019.
+          </p>
+
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="View or demo Utah travel project"
+          >
+            <a
+              href="https://kylejvh.github.io/Utah-Travel-Website/"
+              type="button"
+              class="btn btn-info"
+            >
+              Demo
+            </a>
+            <a
+              href="https://github.com/kylejvh/Utah-Travel-Website/"
+              class="btn btn-info"
+              >Github</a
+            >
+            <button type="button" class="btn btn-info">Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="m-5 mt-5" id="contact">
+      <h1 class="display-4 text-light">Get in touch with me!</h1>
+      <a
+        class="btn btn-info btn-lg m-2 mt-4"
+        href="mailto:kylejvh@gmail.com"
+        target="_blank"
+        role="button"
+        ><i class="fas fa-envelope-square mr-2"></i>E-Mail</a
+      >
+      <a
+      class="btn btn-info btn-lg m-2 mt-4"
+      href="https://github.com/kylejvh"
+      target="_blank"
+      role="button"
+      ><i class="fab fa-github mr-2"></i>Github</a
+    >
+    <a
+    class="btn btn-info btn-lg m-2 mt-4"
+    href="https://www.linkedin.com/in/kylejvh/"
+    target="_blank"
+    role="button"
+    ><i class="fab fa-linkedin mr-2"></i>LinkedIn</a
+  >
+    </div>
+  </body>
+</html>

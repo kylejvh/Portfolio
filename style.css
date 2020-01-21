@@ -1,0 +1,36 @@
+@media (max-width: 575.98px) {
+  .navbarIcons {
+    display: none;
+  }
+}
+
+.nav-test {
+  width: 100%;
+}
+
+.navbarIcons a {
+  font-size: 25px;
+}
+
+.navicon {
+}
+
+#navgroup * {
+  display: none;
+}
+
+.navgroup-expand {
+  display: flex;
+  transition: width 2s;
+  width: 2em;
+}
+
+.navcontainer {
+  transition: 2s width;
+}
+
+.stack-icon {
+  width: auto;
+  height: 50px;
+  margin: 0 1rem 0.2rem 1rem;
+}
