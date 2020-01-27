@@ -29,388 +29,352 @@
     <link href="style.css" rel="stylesheet" />
     <title>KJVH</title>
   </head>
-<!-- 
 
-
-
-
-!! TO DO LIST FOR THIS:
-
-REFERENCE YOUR OLD CHROME TABS AND FIND THE DISCORD DEVELOPER'S PORTFOLIO EXAMPLE. SET IT UP LIKE THAT.
-
-THEN, REFERENCE YOUR UI/UX NOTES AND APPLY THE RULES OF GOOD DESIGN TO THIS.
-
-1. ADD MORE WHITESPACE, SPACE THINGS OUT MORE
-
-2. ADJUST TEXT SIZING FOR CLARITY.
-
-3. MAKE THE TOP CARD THE FIRST, AND MAKE IT FULL WIDTH. MAKE IT TAKE UP A GOOD AMOUNT OF VERTICAL SPACE SO THAT THERE IS CLEAR SEPARATION BETWEEN IT AND THE PROJECTS BELOW. MAKE SURE THE MARGIN SCALES CORRECTLY WITH MOBILE.
-
-4. MAKE THE PAGE FULLY RESPONSIVE, AND TWEAK THE LAYOUT TO DISPLAY CORRECTLY FOR MOBILE. 
-
-5. IMPLEMENT LIGHT MODE?
-
-
-
-
-
-!! MAKE SURE EVERYTHING WORKS... MAKE RESUME DOWNLOAD LINKS WORK!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- -->
+  <!-- !! Make icons SVG and in folders, so they load faster.... -->
 
   <body class="bg-dark">
-    <nav class="navbar navbar-dark navbar-expand-sm">
-      <button
-        class="navbar-toggler btn btn-info"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerTarget"
-        aria-controls="navbarTogglerTarget"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarTogglerTarget"
-      >
-        <div class="navbar-nav">
-          <a class="nav-item nav-link text-light" href="#projects">Projects</a>
-          <a class="nav-item nav-link text-light" href="#contact">Contact</a>
-        </div>
-      </div>
-      <div class="navbarIcons">
-        <div class="navbar-nav d-flex justify-content-end">
-          <a
-            class="nav-link fab fa-github-square text-light"
-            href="https://github.com/kylejvh"
-            target="_blank"
-          ></a>
-          <!-- <a class="nav-link fab fa-linkedin text-light"></a> -->
-        </div>
-      </div>
+    <nav class="navbar navbar-dark justify-content-end">
+      <a class="nav-item nav-link text-light" href="#projects">Projects</a>
+      <a class="nav-item nav-link text-light" href="#contact">Contact</a>
+      <a
+        class="nav-link fab fa-github-square text-light"
+        href="https://github.com/kylejvh"
+        target="_blank"
+      ></a>
+
+      <!-- <a class="nav-link fab fa-linkedin text-light"></a> -->
     </nav>
 
-    <div class=".container-fluid d-flex justify-content-center m-4">
-      <div class="d-flex flex-column align-items-center m-3">
+    <div class="container-fluid d-flex justify-content-center my-5">
+      <div class="d-flex flex-column align-items-center m-2">
         <i
           class="fas fa-book-reader fa-4x mb-1"
           style="color: rgb(155, 49, 255)"
         ></i>
         <h1 class="text-light">Learn.</h1>
       </div>
-      <div class="d-flex flex-column align-items-center m-3">
+      <div class="d-flex flex-column align-items-center m-2">
         <i class="fab fa-react fa-4x mb-1" style="color: #61dafb"></i>
         <h1 class="text-light">Think.</h1>
       </div>
-      <div class="d-flex flex-column align-items-center m-3">
+      <div class="d-flex flex-column align-items-center m-2">
         <i class="fas fa-seedling fa-4x mb-1" style="color: #28a745"></i>
         <h1 class="text-light">Grow.</h1>
       </div>
     </div>
 
-    <div class="jumbotron m-auto p-5 w-50">
-      <h1 class="display-4 mb-2">Kyle Van Hoy</h1>
-      <p class="lead">
-        Self-taught <strong> Problem Solver </strong> dedicated to continuous growth.
-      </p>
-      <div>
-        <div class="d-inline-flex flex-column align-content-end">
-          <img class="stack-icon" src="./svgs/react.svg" alt="react"></img>
-          <p style="text-align: center">
-            React
-          </p>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9 col-11">
+          <div class="jumbotron ">
+            <h1 class="display-4">Kyle Van Hoy</h1>
+            <p class="lead">
+              Self-taught <strong> Problem Solver </strong> dedicated to
+              continuous growth.
+            </p>
+            <div class="flex-wrap justify-content-center">
+              <div class="d-inline-flex flex-column align-content-end">
+                <img class="stack-icon" src="./svgs/react.svg" alt="react" />
+                <p style="text-align: center">
+                  React
+                </p>
+              </div>
+              <div class="d-inline-flex flex-column">
+                <img class="stack-icon" src="./svgs/js.svg" />
+                <p>
+                  JavaScript
+                </p>
+              </div>
+              <div class="d-inline-flex flex-column">
+                <img class="stack-icon" src="./svgs/redux.svg" />
+                <p style="text-align: center">
+                  Redux
+                </p>
+              </div>
+              <div class="d-inline-flex flex-column">
+                <img class="stack-icon" src="./svgs/bootstrap.svg" />
+                <p>
+                  Bootstrap
+                </p>
+              </div>
+              <div class="d-inline-flex flex-column">
+                <img class="stack-icon" src="./svgs/git.svg" />
+                <p style="text-align: center">
+                  Git
+                </p>
+              </div>
+              <div class="d-inline-flex flex-column">
+                <img class="stack-icon" src="./svgs/nodejs.svg" />
+                <p style="text-align: center">
+                  Node.js
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="dropdown">
+              <a
+                class="btn btn-info dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Download Resume</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a
+                  class="dropdown-item"
+                  href="https://drive.google.com/open?id=1K9WIH6dcTDVbAY5i0ah5SJUm_VAsJjEN"
+                  >Download PDF</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="https://drive.google.com/open?id=1BEtVlaEkLCD9oH_mULZsTaQXNde47_-t"
+                  >Download Word Document</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="d-inline-flex flex-column">
-            <img class="stack-icon" src="./svgs/js.svg"></img>
-          <p>
-            JavaScript
-          </p>
-        </div>
-        <div class="d-inline-flex flex-column">
-          <img class="stack-icon" src="./svgs/redux.svg"></img>
-        <p style="text-align: center">
-          Redux
-        </p>
       </div>
-        <div class="d-inline-flex flex-column">
-            <img class="stack-icon" src="./svgs/bootstrap.svg"></img>
-          <p>
-            Bootstrap
-          </p>
+    </div>
+
+    <div class="container-fluid justify-content-center my-5" id="projects">
+      <div class="row my-4 mx-lg-4 mx-md-2">
+        <div class="col-lg-8 m-lg-auto mx-3 m-sm-0">
+          <h1 class="display-4 my-4 mx-3 text-light">
+            My Projects
+          </h1>
+          <div class="card">
+            <a href="https://kjvh-moviecards.herokuapp.com/">
+              <img
+                src="./img/moviecardspreview.jpg"
+                class="card-img-top"
+                alt="MovieCards Preview"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">MovieCards</h5>
+              <span class="badge badge-primary">React w/ Hooks</span>
+              <span class="badge badge-primary">Axios</span>
+              <span class="badge badge-primary">React Router</span>
+              <span class="badge badge-primary">Styled Components</span>
+              <p class="card-text">
+                React app that accesses The Movie Database (TMDb) API to display
+                movie data. <br />
+                <br />
+                This was my first major React project that I continuously worked
+                on. I love great movies and I love great stories. This interest
+                helped me stay persistently focused as I worked through various
+                challenges developing the app. It was the culmination of many
+                concepts I've learned in courses, books, and tutorials, and it
+                was an extremely valuable learning tool. Another motivating
+                factor driving this project was to a desire work with an API
+                that I found interesting. TMDb's API provides access to a
+                treasure trove of data, and allowed me the freedom to build out
+                a feature-rich application.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  &bull; Uses React w/ Hooks: useEffect, useContext, useReducer,
+                  as well as a custom Axios hook for data fetching from the API.
+                </li>
+                <li class="list-group-item">
+                  &bull; Uses Reach Router for routing.
+                </li>
+                <li class="list-group-item">
+                  &bull; Styled with Styled Components
+                </li>
+              </ul>
+              <div
+                class="btn-group mt-3"
+                role="group"
+                aria-label="View or demo React Movie cards project"
+              >
+                <a
+                  href="https://kjvh-moviecards.herokuapp.com/"
+                  type="button"
+                  class="btn btn-info"
+                >
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/kylejvh/React-MovieCards#react-moviecards"
+                  class="btn btn-info"
+                  >Github</a
+                >
+                <!-- <button type="button" class="btn btn-info">Code</button> -->
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="d-inline-flex flex-column">
-            <img class="stack-icon" src="./svgs/git.svg"></img>
-          <p style="text-align: center">
-            Git
-          </p>
-        </div>
-        <div class="d-inline-flex flex-column">
-            <img class="stack-icon" src="./svgs/nodejs.svg"></img>
-          <p style="text-align: center">
-            Node.js
-          </p>
-        </div>
-       
       </div>
-      <hr class="my-4" />
-      <div class="dropdown">
+
+      <div class="row mx-lg-4 mx-md-2">
+        <div class="col col-lg-5 ml-lg-auto mx-3 m-sm-0">
+          <div class="card">
+            <a href="https://kjvh-materialchat.herokuapp.com/">
+              <img
+                src="./img/chatpreview.jpg"
+                class="card-img-top"
+                alt="Chat App Preview"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">MaterialChat</h5>
+              <span class="badge badge-primary">React w/ Hooks</span>
+              <span class="badge badge-primary"></span>
+              <span class="badge badge-primary">socket.io+Node.js</span>
+              <span class="badge badge-primary">Material-UI</span>
+              <p class="card-text">
+                Real-time fully featured React chat application built with
+                Material-UI and socket.io.<br />
+                <br />
+                The idea of building this React app intrigued me because I am a
+                big fan of Discord and use it frequently. My goal was to
+                replicate some aspects of Discord's functionality and design,
+                while keeping the scope of my initial project realistic. Using
+                Material-UI allowed me to focus most of my efforts on
+                implementing features, like username and chatroom name
+                validation and typing/online user event notification.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  &bull; Uses React w/ Hooks: useEffect, useContext, useReducer,
+                  etc.
+                </li>
+                <li class="list-group-item">
+                  &bull; Uses socket.io+Node.js with Express for client-server
+                  communication.
+                </li>
+                <li class="list-group-item">
+                  &bull; Built with Material-UI components and theme system.
+                </li>
+              </ul>
+              <div
+                class="btn-group mt-3"
+                role="group"
+                aria-label="View or demo MaterialChat project"
+              >
+                <a
+                  href="https://kjvh-materialchat.herokuapp.com/"
+                  type="button"
+                  class="btn btn-info"
+                >
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/kylejvh/ReactChatApp#react-chat-app"
+                  class="btn btn-info"
+                  >Github</a
+                >
+                <!-- <button type="button" class="btn btn-info">Code</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- anything larger than large breakpoint, make two rows.
+      otherwise, stack horizontally.  -->
+
+        <div class="col col-lg-5 mr-lg-auto mt-4 mx-3 m-sm-0">
+          <div class="card">
+            <a href="https://kylejvh.github.io/Utah-Travel-Website/">
+              <img
+                src="./img/utahpreview.jpg"
+                class="card-img-top"
+                alt="Chat App Preview"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Utah Travel</h5>
+              <span class="badge badge-primary">HTML</span>
+              <span class="badge badge-primary">CSS</span>
+              <span class="badge badge-primary">JS</span>
+              <span class="badge badge-primary">lightgallery</span>
+
+              <p class="card-text">
+                A showcase website built around my trip to Utah in 2019.
+                <br />
+                <br />
+                This project started as a way to teach myself CSS Grid and
+                Flexbox, with the goal of making responsive image galleries with
+                each. Over time, I have used it as a playground project to try
+                experimenting with CSS tricks and techniques I've learned.
+                During my trip down the CSS rabbit hole, I implemented
+                transitions, keyframe animations, background/text blend modes,
+                and style changes via JavaScript. I took a lot of interesting
+                pictures on this trip and wanted an elegant solution to show
+                some of them off, so I also used lightgallery.js on a dedicated
+                page.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  &bull; Built with HTML/CSS/JS - designed to be fully
+                  responsive.
+                </li>
+                <li class="list-group-item">
+                  &bull; Heavy use of CSS - Grid, Flexbox, tranistions,
+                  animations, blend modes, etc.
+                </li>
+                <li class="list-group-item">
+                  &bull; Uses lightgallery.js with image srcsets for fast,
+                  lightweight browsing of photos at all screen sizes
+                </li>
+              </ul>
+              <div
+                class="btn-group mt-3"
+                role="group"
+                aria-label="View or demo Utah travel project"
+              >
+                <a
+                  href="https://kylejvh.github.io/Utah-Travel-Website/"
+                  type="button"
+                  class="btn btn-info"
+                >
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/kylejvh/Utah-Travel-Website/"
+                  class="btn btn-info"
+                  >Github</a
+                >
+                <!-- <button type="button" class="btn btn-info">Code</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid justify-content-center my-5" id="contact">
+      <div class="col-lg-10 m-lg-auto mx-3 m-sm-0">
+        <h1 class="display-4 text-light mx-3">
+          Contact Me
+        </h1>
         <a
-          class="btn btn-info dropdown-toggle"
-          href="#"
+          class="btn btn-info btn-lg m-2 mt-3"
+          href="mailto:kylejvh@gmail.com"
+          target="_blank"
           role="button"
-          id="dropdownMenuLink"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-          >Download Resume</a
+          ><i class="fas fa-envelope-square mr-2"></i>E-Mail</a
         >
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">Download PDF</a>
-          <a class="dropdown-item" href="#">Download Word Document</a>
-        </div>
+        <a
+          class="btn btn-info btn-lg m-2 mt-3"
+          href="https://github.com/kylejvh"
+          target="_blank"
+          role="button"
+          ><i class="fab fa-github mr-2"></i>Github</a
+        >
+        <a
+          class="btn btn-info btn-lg m-2 mt-3"
+          href="https://www.linkedin.com/in/kylejvh/"
+          target="_blank"
+          role="button"
+          ><i class="fab fa-linkedin mr-2"></i>LinkedIn</a
+        >
       </div>
-    </div>
-
-    <div class="d-flex" id="projects">
-      <div class="card m-4 w-50" style="width: 18rem;">
-        <img
-          src="./img/moviepreview.jpg"
-          class="card-img-top"
-          alt="MovieCards Preview"
-        />
-
-
-        <div class="card-body">
-          <h5 class="card-title">React MovieCards</h5>
-          <span class="badge badge-primary">React</span>
-          <span class="badge badge-primary">Hooks</span>
-          <span class="badge badge-primary">React Router</span>
-          <span class="badge badge-primary">Styled Components</span>
-          <p class="card-text">
-            React app that accesses API to display movie data.
-          </p>
-
-          <div
-            class="btn-group"
-            role="group"
-            aria-label="View or demo React Movie cards project"
-          >
-            <a
-              href="https://kylejvh.github.io/React-MovieCards/"
-              type="button"
-              class="btn btn-info"
-            >
-              Demo
-            </a>
-            <a
-              href="https://github.com/kylejvh/React-MovieCards#react-moviecards"
-              class="btn btn-info"
-              >Github</a
-            >
-            <button type="button" class="btn btn-info">Code</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card m-4 w-50" style="width: 18rem;">
-        <img
-          src="./img/chatpreview.jpg"
-          class="card-img-top"
-          alt="Chat App Preview"
-        />
-        <div class="card-body">
-          <h5 class="card-title">MaterialChat</h5>
-          <span class="badge badge-primary">React w/ Hooks</span>
-          <span class="badge badge-primary"></span>
-          <span class="badge badge-primary">socket.io+Node.js</span>
-          <span class="badge badge-primary">Material-UI</span>
-          <p class="card-text">
-            Real-time fully featured chat application.
-          </p>
-
-          <div
-            class="btn-group"
-            role="group"
-            aria-label="View or demo Utah travel project"
-          >
-            <a
-              href="https://kjvh-materialchat.herokuapp.com/"
-              type="button"
-              class="btn btn-info"
-            >
-              Demo
-            </a>
-            <a
-              href="https://github.com/kylejvh/ReactChatApp#react-chat-app"
-              class="btn btn-info"
-              >Github</a
-            >
-            <button type="button" class="btn btn-info">Code</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-      <div class="card m-4 w-50" style="width: 18rem;">
-        <img
-        src="./img/utahpreview.jpg"
-        class="card-img-top"
-        alt="Chat App Preview"
-      />
-        <div class="card-body">
-          <h5 class="card-title">Utah Travel </h5>
-          <span class="badge badge-primary">HTML</span>
-          <span class="badge badge-primary">CSS</span>
-          <span class="badge badge-primary">JS</span>
-          <span class="badge badge-primary">lightgallery</span>
-         
-          <p class="card-text">
-            A showcase website built around my trip to Utah in 2019.
-          </p>
-
-          <div
-            class="btn-group"
-            role="group"
-            aria-label="View or demo Utah travel project"
-          >
-            <a
-              href="https://kylejvh.github.io/Utah-Travel-Website/"
-              type="button"
-              class="btn btn-info"
-            >
-              Demo
-            </a>
-            <a
-              href="https://github.com/kylejvh/Utah-Travel-Website/"
-              class="btn btn-info"
-              >Github</a
-            >
-            <button type="button" class="btn btn-info">Code</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-
-    <div class="m-5 mt-5" id="contact">
-      <h1 class="display-4 text-light">Get in touch with me!</h1>
-      <a
-        class="btn btn-info btn-lg m-2 mt-4"
-        href="mailto:kylejvh@gmail.com"
-        target="_blank"
-        role="button"
-        ><i class="fas fa-envelope-square mr-2"></i>E-Mail</a
-      >
-      <a
-      class="btn btn-info btn-lg m-2 mt-4"
-      href="https://github.com/kylejvh"
-      target="_blank"
-      role="button"
-      ><i class="fab fa-github mr-2"></i>Github</a
-    >
-    <a
-    class="btn btn-info btn-lg m-2 mt-4"
-    href="https://www.linkedin.com/in/kylejvh/"
-    target="_blank"
-    role="button"
-    ><i class="fab fa-linkedin mr-2"></i>LinkedIn</a
-  >
     </div>
   </body>
 </html>
