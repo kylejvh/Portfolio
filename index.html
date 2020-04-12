@@ -32,16 +32,78 @@
 
   <!-- !! Make icons SVG and in folders, so they load faster.... -->
 
-  <body class="bg-dark">
-    <nav class="navbar navbar-dark justify-content-end">
-      <a class="nav-item nav-link text-light" href="#projects">Projects</a>
-      <a class="nav-item nav-link text-light" href="#contact">Contact</a>
-      <a
-        class="nav-link fab fa-github-square text-light"
-        href="https://github.com/kylejvh"
-        target="_blank"
-      ></a>
+  <!-- //TODO: Compress all preview images. -->
 
+  <!-- //TODO: FIX ROW/COL layout - rows are only supposed to be wrappers for columns, and should not have spacing and styling applied to them. instead style the column
+  https://www.freecodecamp.org/news/learn-the-bootstrap-4-grid-system-in-10-minutes-e83bfae115da/
+  -->
+  <!-- //TODO: Change all descriptions -->
+  <!-- //TODO: Fix insecure hosting problem: www causes issues? -->
+  <!-- //TODO: Fix responsive behavior: More margin on xl size for top card -->
+  <!-- //TODO: See if you can get demo github buttons inline with title -->
+
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-item nav-link text-light" href="#projects"
+              >Projects</a
+            >
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-item nav-link dropdown-toggle text-light"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Résumé</a
+            >
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a
+                class="dropdown-item"
+                href="https://drive.google.com/open?id=1H5SLjTzTDpeYpnCl-orNetT1Ouh7V9iB"
+                target="_blank"
+                >Download Word Document</a
+              >
+              <a
+                class="dropdown-item"
+                href="https://drive.google.com/open?id=1XLxrzabmPOzdra-FGJp9NtbQiKDzf568"
+                target="_blank"
+                >Download PDF</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-item nav-link text-light" href="#contact">Contact</a>
+          </li>
+
+          <li class="nav-item m-auto">
+            <a
+              class="nav-link fab fa-github-square text-light"
+              href="https://github.com/kylejvh"
+              target="_blank"
+            ></a>
+          </li>
+        </ul>
+      </div>
       <!-- <a class="nav-link fab fa-linkedin text-light"></a> -->
     </nav>
 
@@ -49,35 +111,584 @@
       <div class="d-flex flex-column align-items-center m-2">
         <i
           class="fas fa-book-reader fa-4x mb-1"
-          style="color: rgb(155, 49, 255)"
+          style="color: rgb(155, 49, 255);"
         ></i>
 
         <h1 class="text-light">Learn.</h1>
       </div>
       <div class="d-flex flex-column align-items-center m-2">
-        <i class="fab fa-react fa-4x mb-1" style="color: #61dafb"></i>
+        <i class="fab fa-react fa-4x mb-1" style="color: #61dafb;"></i>
         <h1 class="text-light">Think.</h1>
       </div>
       <div class="d-flex flex-column align-items-center m-2">
-        <i class="fas fa-seedling fa-4x mb-1" style="color: #28a745"></i>
+        <i class="fas fa-seedling fa-4x mb-1" style="color: #28a745;"></i>
         <h1 class="text-light">Grow.</h1>
+      </div>
+    </div>
+
+    <div class="container-fluid justify-content-center my-5" id="projects">
+      <div class="row w-75 my-4 mx-lg-auto mx-md-3">
+        <div class="col-lg-8 m-lg-auto mx-3 m-sm-0">
+          <h1 class="display-4 my-4 mx-3 text-light">
+            My Projects
+          </h1>
+        </div>
+
+        <div class="card">
+          <div
+            id="materialchatPreviewIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#materialchatPreviewIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#materialchatPreviewIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#materialchatPreviewIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="./img/chatpreview.jpg" target="_blank">
+                  <img
+                    src="./img/chatpreview.jpg"
+                    class="d-block w-100"
+                    alt="Chat App Preview"
+                  />
+                </a>
+              </div>
+
+              <!-- <div class="carousel-item">
+                <a href="..." target="_blank">
+                  <img src="..." class="d-block w-100" alt="..." />
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="..." target="_blank">
+                  <img src="..." class="d-block w-100" alt="..." />
+                </a>
+              </div> -->
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#materialchatPreviewIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#materialchatPreviewIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <!-- <a href="https://kjvh-materialchat.herokuapp.com/">
+            <img
+              src="./img/chatpreview.jpg"
+              class="card-img-top"
+              alt="Chat App Preview"
+            />
+          </a> -->
+
+          <div class="card-body">
+            <div class="card-title d-inline-block-xl">
+              <h5 class="card-title">MaterialChat</h5>
+
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="View or demo MaterialChat project"
+              >
+                <button
+                  type="button"
+                  class="btn btn-info"
+                  data-toggle="modal"
+                  data-target="#materialchatModal"
+                >
+                  Live Demo
+                </button>
+
+                <a
+                  href="https://github.com/kylejvh/ReactChatApp#react-chat-app"
+                  type="button"
+                  role="button"
+                  target="_blank"
+                  class="btn btn-info"
+                  >Github</a
+                >
+                <!-- <button type="button" class="btn btn-info">Code</button> -->
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="materialchatModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="materialchatModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="materialchatModalLabel">
+                      Guest Credentials for Live Demo
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      This application requires
+                      <strong>unique credentialed accounts. </strong>
+                    </p>
+                    <p>Please use the following login info:</p>
+                    <p class="text-center">
+                      Email <br />
+                      <b>guest@test.com</b> <br />
+                      Password <br />
+                      <b>LpA27t92ab6</b>
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <a
+                      href="https://kjvh-materialchat.herokuapp.com/"
+                      type="button"
+                      role="button"
+                      target="_blank"
+                      class="btn btn-info"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge badge-primary">React / Redux</span>
+            <span class="badge badge-primary">Node.js / Express</span>
+            <span class="badge badge-primary">MongoDB / Mongoose</span>
+            <span class="badge badge-primary">REST API</span>
+            <span class="badge badge-primary">Socket.io</span>
+            <span class="badge badge-primary">Material-UI</span>
+            <p class="card-text mt-1">
+              MERN stack-based modern chat application built with
+              Material-UI.<br />
+              <br />
+              The idea of building a chat app intrigued me because I'm a big fan
+              of Discord and use it frequently. My initial goal was to replicate
+              some aspects of Discord's functionality and design, learning as
+              much as possible along the way. Starting as a simple React app, I
+              refactored it over time as I learned how to implement key back end
+              features with a great looking front end interface.
+            </p>
+            <ul class="list-group list-group-flush">
+              <!-- BACKEND -->
+              <li class="list-group-item">
+                &bull; RESTful API with full CRUD operation support
+              </li>
+
+              <li class="list-group-item">
+                &bull; MongoDB for persistent user accounts, chatrooms, and
+                messages
+              </li>
+
+              <li class="list-group-item">
+                &bull; Advanced Mongoose Models with Validation and Virtual
+                Population
+              </li>
+
+              <li class="list-group-item">
+                &bull; JSON Web Token based authentication and protected routes
+              </li>
+
+              <li class="list-group-item">
+                &bull; Socket.io integration for real-time communication: typing
+                notifications, active user lists, and instant messaging
+              </li>
+
+              <!-- FRONTEND -->
+              <li class="list-group-item">
+                &bull; Uses React and Redux for front end interface and state
+                management.
+              </li>
+
+              <li class="list-group-item">
+                &bull; Built with Material-UI components and theme system.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mx-lg-4 mx-md-2">
+        <div class="col col-lg-5 ml-lg-auto mx-3 m-sm-0">
+          <div class="card">
+            <div
+              id="moviecardsPreviewIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#moviecardsPreviewIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#moviecardsPreviewIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#moviecardsPreviewIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="./img/moviecardsmain.jpg" target="_blank">
+                    <img
+                      src="./img/moviecardsmain.jpg"
+                      class="d-block w-100"
+                      alt="MovieCards Main Screen Preview"
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./img/moviecardsdetail.jpg" target="_blank">
+                    <img
+                      src="./img/moviecardsdetail.jpg"
+                      class="d-block w-100"
+                      alt="MovieCards Detail Screen Preview"
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./img/moviecardsgallery.jpg" target="_blank">
+                    <img
+                      src="./img/moviecardsgallery.jpg"
+                      class="d-block w-100"
+                      alt="MovieCards Gallery Screen Preview"
+                    />
+                  </a>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#moviecardsPreviewIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#moviecardsPreviewIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+            <!-- <a href="https://kylejvh.github.io/MovieCards/">
+              <img
+                src="./img/moviecardspreview.jpg"
+                class="card-img-top"
+                alt="MovieCards Preview"
+              />
+            </a> -->
+
+            <div class="card-body">
+              <div class="card-title d-inline-block-xl">
+                <h5 class="card-title">MovieCards</h5>
+                <div
+                  class="btn-group"
+                  role="group"
+                  aria-label="View or demo React Movie cards project"
+                >
+                  <a
+                    href="https://kylejvh.github.io/MovieCards/"
+                    type="button"
+                    role="button"
+                    target="_blank"
+                    class="btn btn-info"
+                  >
+                    Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/kylejvh/React-MovieCards#react-moviecards"
+                    type="button"
+                    role="button"
+                    target="_blank"
+                    class="btn btn-info"
+                    >Github</a
+                  >
+                  <!-- <button type="button" class="btn btn-info">Code</button> -->
+                </div>
+              </div>
+              <span class="badge badge-primary">React / Redux</span>
+              <span class="badge badge-primary">Axios / TMDb API</span>
+              <span class="badge badge-primary">React Router</span>
+              <span class="badge badge-primary">Styled Components</span>
+              <p class="card-text">
+                React app that accesses The Movie Database (TMDb) API to display
+                movie data. <br />
+                <br />
+                This movie app has been an invaluable platform for learning
+                everything related to front end development. I love great movies
+                and I love great stories. This interest has helped to stay
+                persistently focused while working through various development
+                challenges. I've continuously implemented many concepts I've
+                learned from courses, books, and tutorials. Another motivating
+                factor was a desire to work with an API that I found
+                interesting. TMDb's API provides access to a treasure trove of
+                data, and allowed me the freedom to build out a feature-rich
+                application.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  &bull; Uses React and Redux for front end interface and state
+                  management
+                </li>
+
+                <li class="list-group-item">
+                  &bull; Uses Redux Thunk and Axios for asynchronous data
+                  fetching from TMDb API
+                </li>
+
+                <li class="list-group-item">
+                  &bull; Uses React Router for routing
+                </li>
+
+                <li class="list-group-item">
+                  &bull; Uses LocalStorage API for persistent favorites list of
+                  movies
+                </li>
+
+                <li class="list-group-item">
+                  &bull; Heavy use of CSS-in-JS with Styled Components
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- anything larger than large breakpoint, make two rows.
+      otherwise, stack horizontally.  -->
+
+        <div class="col col-lg-5 mr-lg-auto mt-4 mx-3 m-sm-0">
+          <div class="card">
+            <div
+              id="utahtravelPreviewIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#utahtravelPreviewIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#utahtravelPreviewIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#utahtravelPreviewIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="./img/utahpreview.jpg" target="_blank">
+                    <img
+                      src="./img/utahpreview.jpg"
+                      class="d-block w-100"
+                      alt="Utah Travel Landing Page Preview"
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./img/utahzionpreview.jpg" target="_blank">
+                    <img
+                      src="./img/utahzionpreview.jpg"
+                      class="d-block w-100"
+                      alt="Utah Travel Zion Gallery Page Preview"
+                    />
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./img/utahflexboxpreview.jpg" target="_blank">
+                    <img
+                      src="./img/utahflexboxpreview.jpg"
+                      class="d-block w-100"
+                      alt="Utah Travel Alternate Gallery Page Preview"
+                    />
+                  </a>
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#utahtravelPreviewIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#utahtravelPreviewIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+            <!-- <a href="https://kylejvh.github.io/Utah-Travel-Website/">
+              <img
+                src="./img/utahpreview.jpg"
+                class="card-img-top"
+                alt="Utah Travel Website Preview"
+              />
+            </a> -->
+
+            <div class="card-body">
+              <div class="card-title d-inline-block-xl">
+                <h5 class="card-title">Utah Travel</h5>
+
+                <div
+                  class="btn-group"
+                  role="group"
+                  aria-label="View or demo Utah travel project"
+                >
+                  <a
+                    href="https://kylejvh.github.io/Utah-Travel-Website/"
+                    type="button"
+                    role="button"
+                    target="_blank"
+                    class="btn btn-info"
+                  >
+                    Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/kylejvh/Utah-Travel-Website/"
+                    type="button"
+                    role="button"
+                    target="_blank"
+                    class="btn btn-info"
+                    >Github</a
+                  >
+                  <!-- <button type="button" class="btn btn-info">Code</button> -->
+                </div>
+              </div>
+
+              <span class="badge badge-primary">HTML</span>
+              <span class="badge badge-primary">CSS</span>
+              <span class="badge badge-primary">JS</span>
+              <span class="badge badge-primary">lightgallery</span>
+
+              <p class="card-text">
+                A showcase website built around my trip to Utah in 2019.
+                <br />
+                <br />
+                This is an earlier project aimed at developing skills with CSS
+                Grid and Flexbox, with the goal of making responsive image
+                galleries with each. Over time, I have used it as a playground
+                project for experimenting with CSS tricks and techniques I've
+                learned. During my trip down the CSS rabbit hole, I implemented
+                transitions, keyframe animations, background/text blend modes,
+                and style changes via JavaScript. I took a lot of interesting
+                pictures on this trip and wanted an elegant solution to show
+                some of them off, so I also used lightgallery.js on a dedicated
+                page.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  &bull; Built with HTML/CSS/JS - designed to be fully
+                  responsive
+                </li>
+                <li class="list-group-item">
+                  &bull; Heavy use of CSS - Grid, Flexbox, tranistions,
+                  animations, blend modes, etc
+                </li>
+                <li class="list-group-item">
+                  &bull; Uses lightgallery.js with image srcsets for fast,
+                  lightweight browsing of photos at all screen sizes
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-9 col-11">
-          <div class="jumbotron ">
+          <div class="jumbotron">
             <h1 class="display-4">Kyle Van Hoy</h1>
             <p class="lead">
-              Self-taught <strong> Problem Solver </strong> dedicated to
-              continuous growth.
+              Self-taught Full Stack <strong> Problem Solver </strong> dedicated
+              to continuous growth.
             </p>
             <div class="flex-wrap justify-content-center">
               <div class="d-inline-flex flex-column align-content-end">
                 <img class="stack-icon" src="./svgs/react.svg" alt="react" />
 
-                <p style="text-align: center">
+                <p style="text-align: center;">
                   React
                 </p>
               </div>
@@ -89,7 +700,7 @@
               </div>
               <div class="d-inline-flex flex-column">
                 <img class="stack-icon" src="./svgs/redux.svg" />
-                <p style="text-align: center">
+                <p style="text-align: center;">
                   Redux
                 </p>
               </div>
@@ -101,13 +712,13 @@
               </div>
               <div class="d-inline-flex flex-column">
                 <img class="stack-icon" src="./svgs/git.svg" />
-                <p style="text-align: center">
+                <p style="text-align: center;">
                   Git
                 </p>
               </div>
               <div class="d-inline-flex flex-column">
                 <img class="stack-icon" src="./svgs/nodejs.svg" />
-                <p style="text-align: center">
+                <p style="text-align: center;">
                   Node.js
                 </p>
               </div>
@@ -122,227 +733,19 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-                >Download Resume</a
+                >Download Résumé</a
               >
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a
                   class="dropdown-item"
-                  href="https://drive.google.com/open?id=1K9WIH6dcTDVbAY5i0ah5SJUm_VAsJjEN"
+                  href="https://drive.google.com/open?id=1XLxrzabmPOzdra-FGJp9NtbQiKDzf568"
                   >Download PDF</a
                 >
                 <a
                   class="dropdown-item"
-                  href="https://drive.google.com/open?id=1BEtVlaEkLCD9oH_mULZsTaQXNde47_-t"
+                  href="https://drive.google.com/open?id=1H5SLjTzTDpeYpnCl-orNetT1Ouh7V9iB"
                   >Download Word Document</a
                 >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid justify-content-center my-5" id="projects">
-      <div class="row my-4 mx-lg-4 mx-md-2">
-        <div class="col-lg-8 m-lg-auto mx-3 m-sm-0">
-          <h1 class="display-4 my-4 mx-3 text-light">
-            My Projects
-          </h1>
-          <div class="card">
-            <a href="https://kjvh-moviecards.herokuapp.com/">
-              <img
-                src="./img/moviecardspreview.jpg"
-                class="card-img-top"
-                alt="MovieCards Preview"
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">MovieCards</h5>
-              <span class="badge badge-primary">React w/ Hooks</span>
-              <span class="badge badge-primary">Axios</span>
-              <span class="badge badge-primary">React Router</span>
-              <span class="badge badge-primary">Styled Components</span>
-              <p class="card-text">
-                React app that accesses The Movie Database (TMDb) API to display
-                movie data. <br />
-                <br />
-                This was my first major React project that I continuously worked
-                on. I love great movies and I love great stories. This interest
-                helped me stay persistently focused as I worked through various
-                challenges developing the app. It was the culmination of many
-                concepts I've learned in courses, books, and tutorials, and it
-                was an extremely valuable learning tool. Another motivating
-                factor driving this project was to a desire work with an API
-                that I found interesting. TMDb's API provides access to a
-                treasure trove of data, and allowed me the freedom to build out
-                a feature-rich application.
-              </p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  &bull; Uses React w/ Hooks: useEffect, useContext, useReducer,
-                  as well as a custom Axios hook for data fetching from the API.
-                </li>
-                <li class="list-group-item">
-                  &bull; Uses Reach Router for routing.
-                </li>
-                <li class="list-group-item">
-                  &bull; Styled with Styled Components
-                </li>
-              </ul>
-              <div
-                class="btn-group mt-3"
-                role="group"
-                aria-label="View or demo React Movie cards project"
-              >
-                <a
-                  href="https://kjvh-moviecards.herokuapp.com/"
-                  type="button"
-                  class="btn btn-info"
-                >
-                  Demo
-                </a>
-                <a
-                  href="https://github.com/kylejvh/React-MovieCards#react-moviecards"
-                  class="btn btn-info"
-                  >Github</a
-                >
-                <!-- <button type="button" class="btn btn-info">Code</button> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mx-lg-4 mx-md-2">
-        <div class="col col-lg-5 ml-lg-auto mx-3 m-sm-0">
-          <div class="card">
-            <a href="https://kjvh-materialchat.herokuapp.com/">
-              <img
-                src="./img/chatpreview.jpg"
-                class="card-img-top"
-                alt="Chat App Preview"
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">MaterialChat</h5>
-              <span class="badge badge-primary">React w/ Hooks</span>
-              <span class="badge badge-primary"></span>
-              <span class="badge badge-primary">socket.io+Node.js</span>
-              <span class="badge badge-primary">Material-UI</span>
-              <p class="card-text">
-                Real-time fully featured React chat application built with
-                Material-UI and socket.io.<br />
-                <br />
-                The idea of building this React app intrigued me because I am a
-                big fan of Discord and use it frequently. My goal was to
-                replicate some aspects of Discord's functionality and design,
-                while keeping the scope of my initial project realistic. Using
-                Material-UI allowed me to focus most of my efforts on
-                implementing features, like username and chatroom name
-                validation and typing/online user event notification.
-              </p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  &bull; Uses React w/ Hooks: useEffect, useContext, useReducer,
-                  etc.
-                </li>
-                <li class="list-group-item">
-                  &bull; Uses socket.io+Node.js with Express for client-server
-                  communication.
-                </li>
-                <li class="list-group-item">
-                  &bull; Built with Material-UI components and theme system.
-                </li>
-              </ul>
-              <div
-                class="btn-group mt-3"
-                role="group"
-                aria-label="View or demo MaterialChat project"
-              >
-                <a
-                  href="https://kjvh-materialchat.herokuapp.com/"
-                  type="button"
-                  class="btn btn-info"
-                >
-                  Demo
-                </a>
-                <a
-                  href="https://github.com/kylejvh/ReactChatApp#react-chat-app"
-                  class="btn btn-info"
-                  >Github</a
-                >
-                <!-- <button type="button" class="btn btn-info">Code</button> -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- anything larger than large breakpoint, make two rows.
-      otherwise, stack horizontally.  -->
-
-        <div class="col col-lg-5 mr-lg-auto mt-4 mx-3 m-sm-0">
-          <div class="card">
-            <a href="https://kylejvh.github.io/Utah-Travel-Website/">
-              <img
-                src="./img/utahpreview.jpg"
-                class="card-img-top"
-                alt="Chat App Preview"
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">Utah Travel</h5>
-              <span class="badge badge-primary">HTML</span>
-              <span class="badge badge-primary">CSS</span>
-              <span class="badge badge-primary">JS</span>
-              <span class="badge badge-primary">lightgallery</span>
-
-              <p class="card-text">
-                A showcase website built around my trip to Utah in 2019.
-                <br />
-                <br />
-                This project started as a way to teach myself CSS Grid and
-                Flexbox, with the goal of making responsive image galleries with
-                each. Over time, I have used it as a playground project to try
-                experimenting with CSS tricks and techniques I've learned.
-                During my trip down the CSS rabbit hole, I implemented
-                transitions, keyframe animations, background/text blend modes,
-                and style changes via JavaScript. I took a lot of interesting
-                pictures on this trip and wanted an elegant solution to show
-                some of them off, so I also used lightgallery.js on a dedicated
-                page.
-              </p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  &bull; Built with HTML/CSS/JS - designed to be fully
-                  responsive.
-                </li>
-                <li class="list-group-item">
-                  &bull; Heavy use of CSS - Grid, Flexbox, tranistions,
-                  animations, blend modes, etc.
-                </li>
-                <li class="list-group-item">
-                  &bull; Uses lightgallery.js with image srcsets for fast,
-                  lightweight browsing of photos at all screen sizes
-                </li>
-              </ul>
-              <div
-                class="btn-group mt-3"
-                role="group"
-                aria-label="View or demo Utah travel project"
-              >
-                <a
-                  href="https://kylejvh.github.io/Utah-Travel-Website/"
-                  type="button"
-                  class="btn btn-info"
-                >
-                  Demo
-                </a>
-                <a
-                  href="https://github.com/kylejvh/Utah-Travel-Website/"
-                  class="btn btn-info"
-                  >Github</a
-                >
-                <!-- <button type="button" class="btn btn-info">Code</button> -->
               </div>
             </div>
           </div>
@@ -375,8 +778,8 @@
           target="_blank"
           role="button"
           ><i class="fab fa-linkedin mr-2"></i>LinkedIn</a
-        >
-      </div> -->
+        > -->
+      </div>
     </div>
   </body>
 </html>
